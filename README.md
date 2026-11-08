@@ -1,4 +1,4 @@
-# Taskademik - Web Pengelola Tugas Kuliah (Task Manager)
+# Taskedu - Web Pengelola Tugas Kuliah
 
 Aplikasi web pengelola tugas kuliah modern dan responsif yang dibangun menggunakan framework **React**, **TypeScript**, dan **Vite** dengan pendekatan **Component-Based UI Development**. Antarmuka mengadopsi bahasa desain **Bento Grid** yang bersih, minimalis, dan berorientasi pada produktivitas mahasiswa.
 
