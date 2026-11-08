@@ -1,6 +1,7 @@
 # Taskedu - Web Pengelola Tugas Kuliah
 
 Aplikasi web pengelola tugas kuliah modern dan responsif yang dibangun menggunakan framework **React**, **TypeScript**, dan **Vite** dengan pendekatan **Component-Based UI Development**. Antarmuka mengadopsi bahasa desain **Bento Grid** yang bersih, minimalis, dan berorientasi pada produktivitas mahasiswa.
+<img width="1055" height="902" alt="Screenshot 2026-11-08 193431" src="https://github.com/user-attachments/assets/5ca8909e-06d4-44e7-b294-e6e499554cc9" />
 
 ---
 
