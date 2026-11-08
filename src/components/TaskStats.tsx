@@ -53,10 +53,10 @@ export const TaskStats: React.FC<TaskStatsProps> = ({ tasks }) => {
   return (
     <section className="bento-stats-grid" aria-label="Statistik Tugas">
       {/* Bento 1: Progress Penyelesaian (Hero Card) */}
-      <div className="bento-card bento-col-4 bento-hero">
+      <div className="bento-card bento-col-3 bento-hero">
         <div>
           <div className="bento-hero-header">
-            <span className="stat-label">Progres Keseluruhan</span>
+            <span className="stat-label">Progres Tugas</span>
             <div className="bento-icon-tag tag-blue">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,8 +75,7 @@ export const TaskStats: React.FC<TaskStatsProps> = ({ tasks }) => {
           </div>
           <div className="stat-value">{stats.completionRate}%</div>
           <p className="stat-subtext">
-            <strong>{stats.completed}</strong> dari <strong>{stats.total}</strong> tugas kuliah
-            terselesaikan
+            <strong>{stats.completed}</strong> dari <strong>{stats.total}</strong> tugas selesai
           </p>
         </div>
         <div className="progress-bar-container">
@@ -105,20 +104,22 @@ export const TaskStats: React.FC<TaskStatsProps> = ({ tasks }) => {
             </svg>
           </div>
         </div>
-        <div className="stat-value">{stats.pending}</div>
-        <p className="stat-subtext">
-          {stats.overdue > 0 ? (
-            <span style={{ color: '#e11d48', fontWeight: 700 }}>
-              ⚠️ {stats.overdue} terlewat deadline
-            </span>
-          ) : stats.upcomingSoon > 0 ? (
-            <span style={{ color: '#d97706', fontWeight: 600 }}>
-              🔥 {stats.upcomingSoon} deadline dekat
-            </span>
-          ) : (
-            'Tersedia tugas aktif'
-          )}
-        </p>
+        <div>
+          <div className="stat-value">{stats.pending}</div>
+          <p className="stat-subtext">
+            {stats.overdue > 0 ? (
+              <span style={{ color: '#e11d48', fontWeight: 700 }}>
+                ⚠️ {stats.overdue} terlewat deadline
+              </span>
+            ) : stats.upcomingSoon > 0 ? (
+              <span style={{ color: '#d97706', fontWeight: 600 }}>
+                🔥 {stats.upcomingSoon} deadline dekat
+              </span>
+            ) : (
+              'Tersedia tugas aktif'
+            )}
+          </p>
+        </div>
       </div>
 
       {/* Bento 3: Tugas Selesai (Completed) */}
@@ -142,14 +143,16 @@ export const TaskStats: React.FC<TaskStatsProps> = ({ tasks }) => {
             </svg>
           </div>
         </div>
-        <div className="stat-value">{stats.completed}</div>
-        <p className="stat-subtext">
-          <span style={{ color: '#15803d', fontWeight: 600 }}>✨ Kinerja akademis baik</span>
-        </p>
+        <div>
+          <div className="stat-value">{stats.completed}</div>
+          <p className="stat-subtext">
+            <span style={{ color: '#15803d', fontWeight: 600 }}>✨ Kinerja akademis baik</span>
+          </p>
+        </div>
       </div>
 
       {/* Bento 4: Mata Kuliah Aktif */}
-      <div className="bento-card bento-col-2">
+      <div className="bento-card bento-col-3">
         <div className="bento-hero-header">
           <span className="stat-label">Mata Kuliah</span>
           <div className="bento-icon-tag tag-blue">
@@ -165,11 +168,15 @@ export const TaskStats: React.FC<TaskStatsProps> = ({ tasks }) => {
               strokeLinejoin="round"
             >
               <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z" />
+              <path d="M6 6h10" />
+              <path d="M6 10h10" />
             </svg>
           </div>
         </div>
-        <div className="stat-value">{uniqueCourses}</div>
-        <p className="stat-subtext">Mata kuliah aktif</p>
+        <div>
+          <div className="stat-value">{uniqueCourses}</div>
+          <p className="stat-subtext">Mata kuliah aktif</p>
+        </div>
       </div>
     </section>
   );
