@@ -7,7 +7,7 @@ interface HeaderProps {
 
 export const Header: React.FC<HeaderProps> = ({ onAddTask }) => {
   const config: AppConfig = {
-    appName: import.meta.env.VITE_APP_NAME || 'Taskademik',
+    appName: import.meta.env.VITE_APP_NAME || 'Taskaedu',
     appVersion: import.meta.env.VITE_APP_VERSION || 'v1.0.0',
     appDescription: import.meta.env.VITE_APP_DESCRIPTION || 'Pengelola Tugas Kuliah Modern',
     collegeName: import.meta.env.VITE_COLLEGE_NAME || 'Portal Akademik Mahasiswa'

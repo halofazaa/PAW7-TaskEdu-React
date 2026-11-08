@@ -84,7 +84,7 @@ App.tsx (Root State Management & Business Logic)
 - **Kartu Bento**: Putih murni (`#ffffff`) dengan sudut melengkung besar (`border-radius: 1.5rem` / 24px).
 - **Grid Statistik Simetris**: 4 kartu berukuran seimbang (`bento-col-3` / 25% lebar grid pada desktop).
 - **Bayangan (Soft Shadows)**: Halus dan bertingkat dengan efek hover lift (`transform: translateY(-3px)`).
-- **Aksen Warna**: Biru Modern (`#2563eb` & `#1d4ed8`), Amber (`#d97706`), Emerald (`#15803d`), dan Rose (`#e11d48`).
+- **Aksen Warna**: Rose Coral (`#e0556f` & `#cc3d58`), Amber (`#d97706`), Emerald (`#15803d`), dan Rose (`#e11d48`).
 - **Tipografi**: Font **Manrope** dari Google Fonts (bobot 300, 400, 500, 600, 700, 800).
 - **Responsif**:
   - **Desktop (> 1024px)**: 4 kolom statistik sejajar (`span 3` per kartu) dan 2-3 kolom kartu tugas.

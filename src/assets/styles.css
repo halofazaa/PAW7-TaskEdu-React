@@ -1,6 +1,6 @@
 /* =========================================================
    TASKADEMIK - MODERN BENTO GRID DESIGN SYSTEM
-   Font: Manrope | Background: #f8fafc | Accent: #2563eb
+   Font: Manrope | Background: #f8fafc | Accent: #e0556f
    Border Radius: 1.5rem (24px) | Soft Shadows
    ========================================================= */
 
@@ -8,11 +8,11 @@
   --font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   
   /* Primary & Accent Palette */
-  --primary: #2563eb;
-  --primary-hover: #1d4ed8;
-  --primary-light: #eff6ff;
-  --primary-border: #bfdbfe;
-  --primary-glow: rgba(37, 99, 235, 0.15);
+  --primary: #e0556f;
+  --primary-hover: #cc3d58;
+  --primary-light: #fff0f3;
+  --primary-border: #fecdd3;
+  --primary-glow: rgba(224, 85, 111, 0.22);
 
   /* Neutrals & Surfaces */
   --bg-page: #f8fafc;
@@ -53,7 +53,7 @@
   --radius-full: 9999px;
 
   --shadow-bento: 0 10px 25px -5px rgba(15, 23, 42, 0.04), 0 8px 10px -6px rgba(15, 23, 42, 0.02);
-  --shadow-bento-hover: 0 20px 30px -10px rgba(15, 23, 42, 0.07), 0 10px 15px -3px rgba(37, 99, 235, 0.06);
+  --shadow-bento-hover: 0 20px 30px -10px rgba(15, 23, 42, 0.07), 0 10px 15px -3px rgba(224, 85, 111, 0.12);
   --shadow-modal: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
   
   --transition-smooth: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
@@ -111,7 +111,7 @@ body {
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary) 0%, #38bdf8 50%, #818cf8 100%);
+  background: linear-gradient(90deg, var(--primary) 0%, #fb7185 50%, #fda4af 100%);
 }
 
 .header-brand {
@@ -124,7 +124,7 @@ body {
   width: 52px;
   height: 52px;
   border-radius: 1rem;
-  background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
+  background: linear-gradient(135deg, var(--primary) 0%, #be123c 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,7 +352,7 @@ body {
 
 .progress-bar-fill {
   height: 100%;
-  background: linear-gradient(90deg, var(--primary) 0%, #38bdf8 100%);
+  background: linear-gradient(90deg, var(--primary) 0%, #fb7185 100%);
   border-radius: var(--radius-full);
   transition: width 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
